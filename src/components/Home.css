@@ -1,0 +1,104 @@
+/* Home.css */
+
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url(../assets/imagemFundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #6b5faf1a;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilos para as imagens existentes */
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    height: 257px;
+    width: 263px;
+    z-index: 90;
+}
+
+.esLogo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 732px;
+    width: 1098px;
+    z-index: 80;
+}
+
+.ODS {
+    position: absolute;
+    top: 100px;
+    left: 30%;
+    height: 630px;
+    width: 630px;
+    z-index: 85;
+}
+
+/* --- Ajustes para o icnmenu-button --- */
+
+.icnmenu-button-container { 
+    position: absolute;
+    top: 35%; 
+    left: 20px; 
+    z-index: 100;
+}
+.icnmenu-button {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.icnmenu-button:hover {
+    transform: scale(1.1);
+}
+
+
+.menu-below-logo {
+    position: absolute;
+    /* Para posicionar abaixo do logo: */
+    top: calc(50px + 257px + 20px); /* top do logo + height do logo + margem extra (20px) */
+    left: 100px; 
+
+    width: 70px; /* Largura da imagem, ajuste conforme necessário */
+    height: auto; 
+    
+    cursor: pointer; /* Indica que é clicável */
+    z-index: 95; 
+    
+    /* Controle de visibilidade */
+    opacity: 0;
+    pointer-events: none; 
+    transition: opacity 0.3s ease-in-out; 
+    border-radius: 25%;
+}
+
+.menu-below-logo.is-visible {
+    opacity: 1; 
+    pointer-events: auto; 
+}
+.back-to-PreCadastro-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color:#26119DCC;
+  color: #f8f8f8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 9999;
+  transition: background-color 0.2s;
+}
+
+.back-to-PreCadastro-button:hover {
+  background-color: rgb(118, 168, 224);
+}

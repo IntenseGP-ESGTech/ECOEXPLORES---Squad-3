@@ -1,0 +1,129 @@
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    
+    background-image: url(../assets/imagemFundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #6b5faf1a; 
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilos para as imagens */
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    height: 257px;
+    width: 263px;
+    z-index: 90;
+}
+
+.esLogo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 732px;
+    width: 1098px;
+    z-index: 80;
+}
+
+.image {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    height: 630px;
+    width: 900px;
+    z-index: 85;
+}
+
+.menu {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    height: 343px;
+    width: 104px;
+    z-index: 90;
+}
+
+/* Estilos para os ícones */
+.menuIcon {
+    position: absolute;
+    top: 10%;
+    left: 13%;
+    color: white;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.playIcon {
+    position: absolute;
+    top: 10%;
+    right: 14%;
+    transform: translateX(-50%);
+    color: white;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.peopleIcon {
+    position: absolute;
+    top: 10%;
+    right: 11%;
+    color: white;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.notificationIcon {
+    position: absolute;
+    top: 10%;
+    right: 8%;
+    color: white;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.emailIcon {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    color: white;
+    z-index: 100;
+    cursor: pointer;
+}
+
+/* estilos para a imagem de retorno */
+.andreza {
+position: absolute;
+    left: 20px;
+    bottom: 500px;
+    width: 70px; 
+    height: 70px; 
+    object-fit: cover; 
+    border-radius: 20%; 
+    cursor: pointer;
+    z-index: 100;
+    transition: transform 0.2s ease-in-out;
+}
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color:#26119DCC;
+  color: #f8f8f8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 9999;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: rgb(118, 168, 224);
+}
+
